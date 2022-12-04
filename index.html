@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/Javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/e70f1b94ee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a class="logo"><span class="text">ABDULLAH</span></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, <br> I'm <span class="auto-type">BELLO</span></h1>
+            </div>
+			<p>Motivated, teamwork-oriented, and responsible data analyst with significant experience
+					in increasing comprehension of report and presentation by the average professional.
+					Senior year computer science undergraduate specialized in <span>EXCEL, SQL, PYTHON & POWER BI.</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- About -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/abdullah.jpeg" alt="Profile-Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>              
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Tech Stack</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><i class="fa-solid fa-file-spreadsheet">EXCEL</i></li>
+                            <li><i class="fa-solid fa-database">SQL</i></li>
+                            <li><i class="fa-sharp fa-solid fa-chart-simple"> Power BI</i></li>
+                            <li><i class="fa-brands fa-python" alt="Python">PYTHON</i></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li><span>2022 - Present</span><br> Freelancer @ Upwork </li> <br>
+                            <li><span>2022 - Present</span> <br> Data Science Nigeria Student Ambassador</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - Current</span> <br> BSc Computer Science <br> University of Medical
+                                Sciences, Ondo</li>
+                        </ul>
+                    </div>
+
+                    <div class="socials">
+                        <h3>Contact Me</h3>
+                        <div class="social-icons">
+                            <a href="tell:09165710343"><i class="fa-solid fa-phone"></i></a>
+                            <a href="mailto:Belloabdullah@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://github.com/Datcctvguy"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/datcctvguy/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/Resume.pdf" download class="btn btn2">RESUME</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+   
+	<!-- Portfolio -->
+	
+    <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1> <br>
+                <h3>"That's all data is. A gift from yesterday that you recieve today to make tomorrow better." <br>
+                    -Jon Acuff
+				</h3>
+                <div class="work-list">
+					<div class="info">
+						<div class="work">
+							<img src="images/Hotelvisual.jpg" alt="project1">
+							<div class="layer">
+								<h3>Hotel Booking Data</h3>
+								<a href="https://github.com/Datcctvguy/Hotel-booking-data"><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
+							</div>
+						</div>
+						<h4>
+							Perfomed Exploratory analysis and visualization on a hotel booking data from 2018 to 2020 using SQL and Power BI. Database and the SQL query was built using Microseft SQL, then Power BI was connected to the database for visualization to show important KPIs and answer some business questions to help the stake holders gain quick insight. <a class="btn" href="https://github.com/Datcctvguy/Hotel-booking-data">Hotel Analysis</a>
+						</h4>
+					</div>
+					
+					<div class="info">
+						<div class="work">
+							<img src="images/DataProfSurvey.jpg" alt="project2">
+							<div class="layer">
+								<h3>Data Professionals Survey</h3>
+								<a href="https://github.com/Datcctvguy/Data-Professionals-Survey-">
+									<i class="fa-sharp fa-solid fa-square-up-right"></i>
+								</a>
+							</div>
+						</div>
+						<h4>
+							Perfomed Exploratory analysis and visualization on data Professionals from a survey
+							recorded by Alextheanalyst. The power query editor was
+							used for data cleaning and visualization was done to show some important metrics like
+							the average salary by job title, most used programming language etc. <a class="btn" href="https://github.com/Datcctvguy/Data-Professionals-Survey-">Survey Analysis</a>
+						</h4>
+					</div>
+					
+				
+					<div class="info">	
+						<div class="work">
+						<div>
+								<img src="images/Bike sales.png" alt="project3">
+								<div class="layer">
+									<h3>Bike Sales Analysis</h3>
+									<a href="https://github.com/Datcctvguy/Bike-sales"><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<h4>
+						Performed analysis on bike sales dataset using Microsoft excel for data cleaning and
+						visualization. The trends shown includes, average income per purchase, customer age range and thier commute.
+						<a class="btn" href="https://github.com/Datcctvguy/Bike-sales">Sales Analysis</a>
+						</h4>
+					</div>
+                </div>
+                <!-- <a class='btn' href="Pages/projects.html">see more</a> -->
+            </div>
+        </div>
+
+
+    <!-- contacts -->
+	
+	<div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Get In Touch</h1>
+
+						<div class="social-icons">
+                            <a href="tell:09165710343"><i class="fa-solid fa-phone"></i></a>
+                            <a href="mailto:Belloabdullah@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://github.com/Datcctvguy"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/datcctvguy/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+							<a href="images/Resume.pdf" download class="btn btn2">RESUME</a>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+		<footer>
+            <p> Copyright Ⓒ 2022 ABDULLAH. All rights reserved.</p>
+        </footer>
+
+        <!-- Typed -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed('.auto-type', {
+                strings: [, "ABDULLAH"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
+
+        <!-- Hamburger Menu -->
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }    
+        </script>
+
+
+</body>
+
+</html>
