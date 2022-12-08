@@ -82,7 +82,9 @@ nav ul li a:hover::after {
     margin-top: 50px;
     font-size: 30px;
 }
-
+.header-text p{
+	font-size:20px;
+}
 .header-text p:hover{
     color: lightskyblue;
 }
