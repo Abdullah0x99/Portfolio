@@ -330,14 +330,14 @@ footer {
     width: 100%;
     text-align: center;
     padding: 25px;
-    background: black;
+    background: #36454F;
     font-weight: 300;
     margin-top: 20px;
     display: block;
 }
 
 footer p {
-    color: lightskyblue;
+    color: white;
     font-weight: 500;
 }
 
